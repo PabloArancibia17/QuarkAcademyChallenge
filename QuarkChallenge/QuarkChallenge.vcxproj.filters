@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="App">
+      <UniqueIdentifier>{7b3151f5-2126-4ef8-b0f4-a8a209da0cee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{d0ced9ce-14ef-4ea0-8885-6ab15647b981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View\IView">
+      <UniqueIdentifier>{b7359396-53a4-46bb-96a9-6307788067fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View\View Class">
+      <UniqueIdentifier>{a26e18a7-a149-44e4-8ffe-39f27f2f3e08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{7aba6aa1-bf55-4705-a292-7b916dabba7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Cotizacion">
+      <UniqueIdentifier>{43ea039d-361b-4e01-833c-94f60f098185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Presenter">
+      <UniqueIdentifier>{f2c32cf6-5f5a-46fc-aa75-578cbf678fd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Seller">
+      <UniqueIdentifier>{d85bdfce-ff35-45f3-8cf6-0d702f68621b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Shop">
+      <UniqueIdentifier>{1b2fef1f-20b3-4fee-8d34-124aead16c19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Clothes">
+      <UniqueIdentifier>{d7fb9cf9-8200-4b6b-a2a9-e6d4330a24f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Clothes\Tipos">
+      <UniqueIdentifier>{fb238ae9-c916-4f66-9e36-b31380950476}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="View.cpp">
+      <Filter>View\View Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Seller.cpp">
+      <Filter>Classes\Seller</Filter>
+    </ClCompile>
+    <ClCompile Include="Cotization.cpp">
+      <Filter>Classes\Cotizacion</Filter>
+    </ClCompile>
+    <ClCompile Include="Presenter.cpp">
+      <Filter>Presenter</Filter>
+    </ClCompile>
+    <ClCompile Include="Shop.cpp">
+      <Filter>Classes\Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="Pants.cpp">
+      <Filter>Classes\Clothes\Tipos</Filter>
+    </ClCompile>
+    <ClCompile Include="Shirt.cpp">
+      <Filter>Classes\Clothes\Tipos</Filter>
+    </ClCompile>
+    <ClCompile Include="Clothes.cpp">
+      <Filter>Classes\Clothes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IView.h">
+      <Filter>View\IView</Filter>
+    </ClInclude>
+    <ClInclude Include="View.h">
+      <Filter>View\View Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Seller.h">
+      <Filter>Classes\Seller</Filter>
+    </ClInclude>
+    <ClInclude Include="Cotization.h">
+      <Filter>Classes\Cotizacion</Filter>
+    </ClInclude>
+    <ClInclude Include="Presenter.h">
+      <Filter>Presenter</Filter>
+    </ClInclude>
+    <ClInclude Include="Shop.h">
+      <Filter>Classes\Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="Pants.h">
+      <Filter>Classes\Clothes\Tipos</Filter>
+    </ClInclude>
+    <ClInclude Include="Shirt.h">
+      <Filter>Classes\Clothes\Tipos</Filter>
+    </ClInclude>
+    <ClInclude Include="Clothes.h">
+      <Filter>Classes\Clothes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

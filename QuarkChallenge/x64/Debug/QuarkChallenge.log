@@ -1,0 +1,5 @@
+﻿  View.cpp
+C:\Quark Academy\QuarkChallenge\QuarkChallenge\View.cpp(456,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Quark Academy\QuarkChallenge\QuarkChallenge\View.cpp(457,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Quark Academy\QuarkChallenge\QuarkChallenge\View.cpp(152): warning C4717: 'View::ShowCotizationMenu': recursive on all control paths, function will cause runtime stack overflow
+  QuarkChallenge.vcxproj -> C:\Quark Academy\QuarkChallenge\x64\Debug\QuarkChallenge.exe
