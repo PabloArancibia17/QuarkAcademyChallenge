@@ -10,7 +10,7 @@ using namespace std;
 #pragma region Constants
 const string INVALID_OPTION = "Ha seleccionado una opcion incorrecta. Por favor ingrese nuevamente una opcion valida.";
 const string INVALID_OPTION_CLOTHES = "Ha seleccionado una opcion incorrecta. Por favor ingrese nuevamente una opcion valida. Iniciaremos el proceso nuevamente";
-const string OUT_OF_STOCK = "El Stock no es suficiente para realizar el pedido.";
+const string OUT_OF_STOCK = "El Stock no es suficiente para realizar el pedido. Por favor inicie el proceso nuevamente.";
 
 #pragma endregion
 
@@ -430,7 +430,7 @@ void View::ShowEndMenu(Clothes* prenda)
 		}
 	}
 
-	int unidades;
+	string unidades;
 	cout << "INFORMACION:" << endl;
 	cout << "EXISTEN " << clotheReference->GetStock() << " CANTIDAD DE UNIDADES EN STOCK DE LA PRENDA SELECCIONADA" << "\n" << endl;
 	cout << "PASO 5: Ingrese la cantidad de unidades a cotizar" << endl;
@@ -443,18 +443,41 @@ void View::ShowEndMenu(Clothes* prenda)
 		ShowCotizationMenu();
 	}
 	else 
-	{
-		do {
+	{	
+		try {
 			cin >> unidades;
-			cout << OUT_OF_STOCK << endl;
-		} while (unidades > clotheReference->GetStock());
+			int intUnits = stoi(unidades);
+			if (intUnits > clotheReference->GetStock()) {
+				cout << OUT_OF_STOCK << endl;
+				cin.get();
+				cin.get();
+				system("cls");
+				ShowCotizationMenu();
+			}
+				
+		}
+		catch (invalid_argument) {
+			cout << INVALID_OPTION_CLOTHES << "\n" << endl;
+			cin.get();
+			cin.get();
+			system("cls");
+			ShowCotizationMenu();
+		}
+		catch (out_of_range) {
+			cout << INVALID_OPTION_CLOTHES << "\n" << endl;
+			cin.get();
+			cin.get();
+			system("cls");
+			ShowCotizationMenu();
+		}
+		int intUnits = stoi(unidades);
 
 		cin.get();
 		system("cls");
 
 		//Sending values to presenter in order to update data
-		presenter->UpdateClotheData(prenda, checkedPrice, unidades);
-		presenter->GetCotization(prenda, unidades, checkedPrice);
+		presenter->UpdateClotheData(prenda, checkedPrice, intUnits);
+		presenter->GetCotization(prenda, intUnits, checkedPrice);
 
 	}
 
