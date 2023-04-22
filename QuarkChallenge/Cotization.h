@@ -20,6 +20,7 @@ public:
 
 #pragma region Public Functions
 	Cotization(string id, Clothes* clotheToCotiz, int unitQuantity, float price, string date);
+	~Cotization();
 	float SetCotizationResult();
 #pragma endregion
 

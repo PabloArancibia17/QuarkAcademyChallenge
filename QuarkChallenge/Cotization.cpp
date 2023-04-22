@@ -10,6 +10,10 @@ Cotization::Cotization(string id, Clothes* clotheToCotiz, int unitQuantity, floa
 	this->date = date;
 }
 
+Cotization::~Cotization() {
+	delete clotheToCotiz;
+}
+
 float Cotization::SetCotizationResult()
 {
 	float result = clotheToCotiz->GetPrice() * unitQuantity;
